@@ -1,0 +1,12 @@
+name: mraduntsev
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - ipywidgets
+  - sympy
+  - jupyterlab
+  - numpy
+  - pip
+  - pip:
+      - git+https://github.com/mraduntsev/q-mech

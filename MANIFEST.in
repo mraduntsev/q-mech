@@ -1,0 +1,2 @@
+recursive-include book *.ipynb
+recursive-include book *.md

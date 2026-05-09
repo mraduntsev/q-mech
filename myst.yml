@@ -1,0 +1,132 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 73d05755-2e37-4f75-a4ed-5a7c93d42e59
+  title: Обзор
+  copyright: 2026
+  keywords: [sympy, structural mechanics, truss, beam, cable]
+  subject: Строительная механика, сопротивление материалов
+    Руководство по SymPy
+  authors:
+    - name: Максим Радунцев
+      github: mraduntsev
+      url: https://scitechai.ru
+      email: raduntsev.mv@gmail.com
+      corresponding: true
+  affiliations:
+    - id: scitechai.ru
+      name: Интеллектуальные решения
+      url: https://scitechai.ru
+  github: https://github.com/mraduntsev/q-mech
+  thebe:
+    binder:
+      url: https://mybinder.org
+      repo: mraduntsev/q-mech
+      ref: main
+    lite: false
+  resources:
+    - binder/environment.yml
+  bibliography:
+    - book/references.bib
+  settings:
+    output_matplotlib_strings: remove
+    output_stderr: remove-warn
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/book.pdf
+  exclude:
+    - _build
+    - Thumbs.db
+    - .DS_Store
+    - .venv/    
+    - "**.ipynb_checkpoints"
+    - README.md
+  toc:
+    - file: book/index.md
+      title: Главная
+    - file: book/beam.md
+      title: Балки (Beam)
+      children:
+        - file: book/beam/loads-and-supports.ipynb
+          title: Нагрузки и опоры
+        - file: book/beam/properties.ipynb
+          title: Свойства сечения и материала
+        - file: book/beam/statics.ipynb
+          title: Статический расчёт
+        - file: book/beam/deformations.ipynb
+          title: Перемещения
+        - file: book/beam/ild.ipynb
+          title: Линии влияния
+        - file: book/beam/plotting.ipynb
+          title: Визуализация
+        - file: book/beam/joining.ipynb
+          title: Составные балки
+        - file: book/beam/examples.ipynb
+          title: Решение задач
+    - file: book/beam3d.md
+      title: Пространственные балки (Beam3D)
+      children:
+        - file: book/beam3d/loads.ipynb
+          title: Приложение нагрузок
+        - file: book/beam3d/properties.ipynb
+          title: Свойства сечения и материала
+        - file: book/beam3d/statics.ipynb
+          title: Статический расчёт
+        - file: book/beam3d/deformations.ipynb
+          title: Перемещения
+        - file: book/beam3d/plotting.ipynb
+          title: Визуализация
+    - file: book/truss.md
+      title: Фермы (Truss)
+      children:
+        - file: book/truss/geometry.ipynb
+          title: Построение геометрии
+        - file: book/truss/members-and-nodes.ipynb
+          title: Свойства элементов
+        - file: book/truss/loads-and-supports.ipynb
+          title: Нагрузки и опоры
+        - file: book/truss/solving-and-results.ipynb
+          title: Расчёт и результаты
+        - file: book/truss/plotting.ipynb
+          title: Визуализация
+    - file: book/cable.md
+      title: Тросы (Cable)
+      children:
+        - file: book/cable/configuration.ipynb
+          title: Конфигурация и свойства
+        - file: book/cable/loads.ipynb
+          title: Приложение нагрузок
+        - file: book/cable/solving-and-results.ipynb
+          title: Расчёт и результаты
+        - file: book/cable/plotting.ipynb
+          title: Визуализация
+    - file: book/arch.md
+      title: Арки (Arch)
+      children:
+        - file: book/arch/configuration.ipynb
+          title: Конфигурация и свойства
+        - file: book/arch/loads.ipynb
+          title: Приложение нагрузок
+        - file: book/arch/solving-and-results.ipynb
+          title: Расчёт и результаты
+        - file: book/arch/plotting.ipynb
+          title: Визуализация
+site:
+  options:
+    logo: book/images/ava.png
+    favicon: book/images/favicon.ico
+    logo_text: Строймех в SymPy
+    folders: true
+  template: book-theme
+  nav:
+    - url: /book/beam
+      title: Балки
+    - url: /book/beam3d
+      title: 3D балки
+    - url: /book/truss
+      title: Фермы
+    - url: /book/cable
+      title: Тросы
+execute:
+  execute_notebooks: cache
