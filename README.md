@@ -104,8 +104,8 @@
 ### 1. Клонируйте проект
 
 ```bash
-git clone https://github.com/dugalab/sympy-structural-mechanics-ru.git
-cd sympy-structural-mechanics-ru
+git clone https://github.com/mraduntsev/q-mech.git
+cd q-mech
 ```
 
 ### 2. Создайте виртуальное окружение
@@ -161,9 +161,9 @@ cd book && jupyter-book start
 
 | Тип обращения | Канал |
 |--------------|-------|
-| Вопросы по расчётам, примеры | [Discussions](https://github.com/dugalab/sympy-structural-mechanics-ru/discussions) |
-| Ошибки в коде, предложения | [Issues](https://github.com/dugalab/sympy-structural-mechanics-ru/issues) |
-| Сотрудничество, рецензирование | [@dugalab](https://github.com/dugalab) в GitHub |
+| Вопросы по расчётам, примеры | [Discussions](https://github.com/mraduntsev/q-mech/discussions) |
+| Ошибки в коде, предложения | [Issues](https://github.com/mraduntsev/q-mech/issues) |
+| Сотрудничество, рецензирование | [@mraduntsev](https://github.com/mraduntsev) в GitHub |
 
 > Для ускорения ответа указывайте: версию SymPy, минимальный воспроизводимый пример, ожидаемый и фактический результат.
 
