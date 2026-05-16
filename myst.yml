@@ -91,7 +91,7 @@ project:
         - file: book/truss/plotting.ipynb
           title: Визуализация
     - file: book/cable.md
-      title: Тросы (Cable)
+      title: Нити (Cable)
       children:
         - file: book/cable/configuration.ipynb
           title: Конфигурация и свойства
@@ -127,6 +127,6 @@ site:
     - url: /book/truss
       title: Фермы
     - url: /book/cable
-      title: Тросы
+      title: Нити
 execute:
   execute_notebooks: cache
